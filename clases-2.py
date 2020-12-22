@@ -13,3 +13,4 @@ class D(A, B, C):
     pass
 
 print(D().a)
+print(D.mro())
