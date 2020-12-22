@@ -1,3 +1,5 @@
+#Docs https://docs.python.org/3/tutorial/errors.html
+
 try:
     #Zero:
     i = 1/0
