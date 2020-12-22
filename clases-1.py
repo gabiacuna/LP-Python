@@ -19,14 +19,17 @@ class Perro:
         print("Feliz cumpleaños!")
     def nuevxAmigx(self, obj):
         self.amigos.append(obj)
+        print(self.nombre, " y ", obj.nombre, " son amigos!")
 
-class Cachorro(Perro):
-    def __init__(self):
+class Cachorro(Perro):  # Herencia
+    def __init__(self, n):
         print("Nacio un cachorrito!")
+        Perro.__init__(self, n, e = 0)  # Para llamar al constructor y cualquier metodo de la clase parte
 
 
-p = Perro("Prince", 11) #instanciacion
+p = Perro("Prince", 11) # instanciacion
 g = Perro("Grego", 8)
+C = Cachorro("Cliford")
 
 p.ladrar()
 p.placaInfo()
