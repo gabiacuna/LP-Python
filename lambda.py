@@ -16,8 +16,10 @@ def make_elevador(n):
     return lambda x : x**n
 
 f = make_elevador(5)
+g = make_elevador(7)
 
 print(f(2))
+print(g(2))
 
 pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four'), (5, 'a')]
 pairs.sort(key=lambda pair: pair[1])
