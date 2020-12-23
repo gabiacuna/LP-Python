@@ -28,6 +28,8 @@ for i in x:
 # retorna un iterador a los elementos de un iterable que cumplan concierta 
 # condicion (una funcion que retorna verdadero o falso)
 
-lista = filter(lambda x: x%2 != 0, [1, 2, 3, 4, 5, 6])
+lista = list(filter(lambda x: x%2 != 0, [1, 2, 3, 4, 5, 6]))
+
+print(lista)
 
 for i in lista: print(i)
